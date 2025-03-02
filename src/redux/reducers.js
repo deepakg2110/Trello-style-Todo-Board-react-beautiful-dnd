@@ -13,7 +13,7 @@ function lists(state = {}, action) {
 
       // Assign tasks to `pending` list by default from API data
       action.todos.forEach((todo) => {
-        initialState.pending.tasks.push(todo.id);
+        initialState.pending.tasks.push(todo.id.toString());
       });
 
       return initialState;

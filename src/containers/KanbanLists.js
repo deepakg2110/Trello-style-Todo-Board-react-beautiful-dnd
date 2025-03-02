@@ -14,7 +14,7 @@ class KanbanLists extends React.Component {
   }
 
   getTasks(list, tasks) {
-    return _.map(list.tasks, taskId => tasks[taskId])
+    return list.tasks.map((taskId) => tasks[taskId]);
   }
 
   onDragEnd({ source, destination, draggableId }) {

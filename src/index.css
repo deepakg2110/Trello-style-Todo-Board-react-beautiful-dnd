@@ -75,9 +75,9 @@ main {
 
 /* Button hover effect */
 .card-header button:hover {
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
+/*   opacity: 1; */
+  background:   background: #890101;
+/*   border-radius: 4px; */
 }
 
 /* Ensure Bootstrap Icons are included */

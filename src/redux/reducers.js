@@ -27,10 +27,17 @@ function lists(state = {}, action) {
     case MOVE_TASK: {
       const from = state[action.fromListId];
       const to = state[action.toListId];
+    
+      // Convert IDs to strings for comparison consistency
+      const taskIdToMove = action.id.toString();
+    
+      const updatedFromTasks = from.tasks.filter((taskId) => taskId.toString() !== taskIdToMove);
+      const updatedToTasks = [...to.tasks, taskIdToMove];
+    
       return {
         ...state,
-        [from.id]: { ...from, tasks: _.without(from.tasks, action.id) },
-        [to.id]: { ...to, tasks: to.tasks.concat(action.id) },
+        [from.id]: { ...from, tasks: updatedFromTasks },
+        [to.id]: { ...to, tasks: updatedToTasks },
       };
     }
     case DELETE_TASK: {
@@ -50,7 +57,7 @@ function tasks(state = {}, action) {
     case SET_INITIAL_DATA: {
       const taskState = {};
       action.todos.forEach((todo) => {
-        taskState[todo.id] = { id: todo.id, title: todo.todo };
+        taskState[todo.id] = { id: todo.id.toString(), title: todo.todo };
       });
       return taskState;
     }

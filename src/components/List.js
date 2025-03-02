@@ -28,7 +28,7 @@ export default class List extends React.Component {
     const { list, tasks, provided, innerRef } = this.props;
 
     return (
-      <div className="col-12 col-md-4 col-sm-6 mb-4" ref={innerRef}>
+      <div className="col-12 col-md-4 col-sm-6 mb-4" ref={innerRef} {...provided.draggableProps}>
         <div
           className="list-container border"
           style={{

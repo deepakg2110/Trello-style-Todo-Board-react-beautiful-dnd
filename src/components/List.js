@@ -88,7 +88,7 @@ export default class List extends React.Component {
           >
             {tasks.length > 0 ? (
               tasks.map((task, index) => (
-                <Draggable key={task.id} draggableId={task.id} index={index}>
+                <Draggable key={task.id} draggableId={task.id.toString()} index={index}>
                   {(dragProvided, snapshot) => (
                     <div
                       className="task-item mb-1"

@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Trello-style-Todo-Board-react-beautiful-dnd/static/css/main.364abf22.css",
-    "main.js": "/Trello-style-Todo-Board-react-beautiful-dnd/static/js/main.f3fcd3a7.js",
+    "main.js": "/Trello-style-Todo-Board-react-beautiful-dnd/static/js/main.ce8d6f13.js",
     "index.html": "/Trello-style-Todo-Board-react-beautiful-dnd/index.html",
     "main.364abf22.css.map": "/Trello-style-Todo-Board-react-beautiful-dnd/static/css/main.364abf22.css.map",
-    "main.f3fcd3a7.js.map": "/Trello-style-Todo-Board-react-beautiful-dnd/static/js/main.f3fcd3a7.js.map"
+    "main.ce8d6f13.js.map": "/Trello-style-Todo-Board-react-beautiful-dnd/static/js/main.ce8d6f13.js.map"
   },
   "entrypoints": [
     "static/css/main.364abf22.css",
-    "static/js/main.f3fcd3a7.js"
+    "static/js/main.ce8d6f13.js"
   ]
 }

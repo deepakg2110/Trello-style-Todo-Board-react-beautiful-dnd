@@ -43,7 +43,7 @@ class KanbanLists extends React.Component {
             lists.map((list) => (
               <Droppable droppableId={list.id} key={list.id}>
                 {(provided, snapshot) => (
-                  <List list={list} tasks={this.getTasks(list, tasks)} innerRef={provided.innerRef} provided={provided} />
+                  <List list={list} tasks={this.getTasks(list, tasks)} innerRef={provided.innerRef} {...provided.droppableProps} provided={provided} />
                 )}
               </Droppable>
             ))

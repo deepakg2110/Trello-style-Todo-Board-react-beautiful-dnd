@@ -21,7 +21,7 @@ function lists(state = {}, action) {
     case ADD_TASK: {
       return {
         ...state,
-        pending: { ...state.pending, tasks: state.pending.tasks.concat(action.id) },
+        pending: { ...state.pending, tasks: state.pending.tasks.concat(action.id.toString()) },
       };
     }
     case MOVE_TASK: {
